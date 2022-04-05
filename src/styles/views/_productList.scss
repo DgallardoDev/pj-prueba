@@ -1,0 +1,45 @@
+@import "../components/productCard";
+.productList {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 5px 5px 10px rgb(180, 180, 180);
+  background-color: white;
+  height: calc(100vh - 90px);
+}
+.productList__types {
+  padding: 1%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.productList__types__radio {
+  display: flex;
+  flex-direction: column;
+}
+.productList__types__radioItem {
+  display: flex;
+  flex-direction: row;
+}
+.productList__catalog {
+  padding: 1% 1% 0 1%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.productList__catalog__title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.productList__catalog__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}

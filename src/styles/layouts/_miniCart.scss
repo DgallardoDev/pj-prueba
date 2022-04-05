@@ -1,0 +1,99 @@
+//main
+.miniCart {
+  background-color: rgba(255, 255, 255);
+  border-style: groove;
+  border-radius: 15px;
+  margin-top: 80px;
+  margin-left: 65%;
+  position: absolute;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  width: 20%;
+  padding: 1%;
+}
+.miniCart hr {
+  background-color: black;
+  height: 1px;
+  margin-top: 2%;
+}
+
+//cabecera con titulo
+.miniCart__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//boton ocultar carro
+.miniCart__header__close {
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  &:hover {
+    cursor: pointer;
+  }
+}
+//productos contenedor
+.miniCart__products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+//producto
+.miniCart__products__product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+//imagen miniatura
+.miniCart__products__product img {
+  border-radius: 15px 15px 0px 0px;
+  width: 20%;
+}
+//titulo  cantidad precio
+.miniCart__products__product__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//boton borrar
+.miniCart__products__product__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 4, 4);
+  & svg {
+    cursor: pointer;
+    &:hover {
+      color: rgb(122, 0, 0);
+    }
+  }
+}
+
+//totales
+.miniCart__total {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+//boton para pasar a checkout
+.miniCart__button__checkout {
+  width: auto;
+  padding: 2%;
+  margin-top: 3%;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  font-size: larger;
+  font-weight: 100;
+  background-color: #018d5a;
+  &:hover {
+    cursor: pointer;
+    background-color: #025c3b;
+  }
+}

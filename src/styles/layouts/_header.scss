@@ -1,0 +1,26 @@
+.header {
+  margin-top: 10px;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(180, 180, 180);
+  height: 70px;
+}
+.header__img {
+  width: 200px;
+  margin-left: 2vw;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.header__span {
+  margin-right: 2vw;
+  cursor: pointer;
+  &:hover {
+    margin-right: 2vw;
+    color: gray;
+  }
+}

@@ -1,0 +1,8 @@
+@import '../components/cartDetail';
+@import '../components/cartResume';
+.checkout {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}

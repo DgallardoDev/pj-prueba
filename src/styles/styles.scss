@@ -1,5 +1,9 @@
-@import './base/settings';
-@import './base/base';
-
-//pages
-@import './Pages/productlist';
+@import "./base/settings";
+@import "./base/base";
+//layouts
+@import "./layouts/header";
+@import "./layouts/miniCart";
+//views
+@import "./views/productList";
+@import "./views/productDetail";
+@import "./views/checkout";
