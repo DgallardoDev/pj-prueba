@@ -3,7 +3,7 @@ import {types} from '../types'
 export const getCatalog = () =>({
     type:types.getCatalog,
 })
-// action para recibir el dispatch de getAllAmiibos
+// action para setear los productos obtenidos
 export const setCatalog = (payload) =>({
     type:types.setCatalog,
     payload

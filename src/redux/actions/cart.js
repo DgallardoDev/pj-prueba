@@ -1,5 +1,5 @@
 import { types } from "../types";
-//action para recibir la llamada y obtener productos
+
 export const addCart = (payload) => ({
   type: types.addCart,
   payload,

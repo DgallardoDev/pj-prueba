@@ -2,13 +2,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMessage } from "../redux/actions/message";
 
 export const Modal = () => {
-  // se evalua el estado para abrir modal
-  const msg = useSelector((state) => state.message);
-
   const dispatch = useDispatch();
+
+  
+  const msg = useSelector((state) => state.message);
+  // al presionar aceptar, se cierra el modal y se pone en false para no mostrar el componente
+  
   const handlerClick = () => {
     dispatch(setMessage({ show: false, text: "" }));
   };
+
   return (
     <>
       {msg.show ? (

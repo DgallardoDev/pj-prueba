@@ -7,6 +7,7 @@ import { Navigation } from "../../routes/Navigation";
 import "../../styles/styles.scss";
 
 const Main = () => {
+  
   return (
     <Provider store={store}>
       <BrowserRouter>

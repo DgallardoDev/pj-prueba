@@ -7,11 +7,16 @@ import { showMiniCart } from "../redux/actions/showMiniCart";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const displayMiniCart = useSelector((state) => state.showMiniCart);
   const dispatch = useDispatch();
+
+  //se obtiene valor para mostrar mini cart
+  const displayMiniCart = useSelector((state) => state.showMiniCart);
+
+  //metodo para cambiar de true a false o viceversa si se presiona el boton de carrito
   const handlerMiniCart = () => {
     dispatch(showMiniCart(!displayMiniCart));
   };
+  
   return (
     <div className="header">
       <img
