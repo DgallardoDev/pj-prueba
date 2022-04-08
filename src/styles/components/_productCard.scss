@@ -1,24 +1,32 @@
 .productCard {
-  background-color: white;
+  background-color: $primary;
   border-radius: 15px;
-  color: black;
+  color: $secondary;
   padding-bottom: 5px;
-  width: 15%;
+  width: 20%;
   margin-right: 5px;
   margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .productCard__img {
   border-radius: 15px 15px 0px 0px;
-  width: 100%;
-  height: auto;
+  height: 220px;
+  max-width: 190px; 
+  object-fit: contain;
+  display: block;
   &:hover {
     cursor: pointer;
-    width: 95%;
   }
 }
 .productCard__title {
   margin: 10px;
+  text-align: center;
+}
+.productCard__price {
+  font-weight: bold;
 }
 
 .productCard__buttonsContainer {
@@ -30,7 +38,7 @@
 .productCard__buttonMinus {
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid $secondary;
   border-radius: 5px 0px 0px 5px;
   font-size: 20px;
   width: 30px;
@@ -41,8 +49,8 @@
 }
 
 .productCard__countLabel {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid $secondary;
+  border-top: 1px solid $secondary;
   font-size: 16px;
   height: 25px;
   padding-top: 5px;
@@ -53,7 +61,7 @@
 .productCard__buttonAdd {
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid $secondary;
   border-radius: 0px 5px 5px 0px;
   font-size: 20px;
   width: 30px;
@@ -61,4 +69,3 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
-

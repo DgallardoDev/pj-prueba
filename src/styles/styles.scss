@@ -2,8 +2,11 @@
 @import "./base/base";
 //layouts
 @import "./layouts/header";
-@import "./layouts/miniCart";
+@import "./layouts/modal";
 //views
 @import "./views/productList";
 @import "./views/productDetail";
 @import "./views/checkout";
+
+//components
+@import "./components/miniCart";

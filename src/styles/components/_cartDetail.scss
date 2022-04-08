@@ -1,14 +1,22 @@
 .cartDetail {
-  background-color: white;
+  background-color: $primary;
   border-radius: 15px;
   padding: 1%;
   width: 70%;
   box-shadow: 5px 5px 10px rgb(180, 180, 180);
-  height: auto;
+  height: min-content;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  max-height: 58vh;
+  & hr {
+    margin-top: 3px;
+    background-color: $secondary;
+    height: 1px;
+  }
 }
 .cartDetail__table {
+  margin-top: 20px;
   border-collapse: collapse;
   & thead tr td {
     text-align: center;
@@ -24,14 +32,14 @@
     border-radius: 10px;
   }
   & svg {
-    color: rgb(189, 4, 4);
+    color:$red;
     cursor: pointer;
     &:hover {
-      color: rgb(122, 0, 0);
+      color: $red-hover
     }
   }
 }
-//celdas especiales
+//celda producto
 .cartDetail__table__product {
   width: 20%;
   justify-content: center;
@@ -40,6 +48,7 @@
     width: 80px;
   }
 }
+//celda cantidad
 .cartDetail__table__buttonsContainer {
   display: flex;
   flex-direction: row;

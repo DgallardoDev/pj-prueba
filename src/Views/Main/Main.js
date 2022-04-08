@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "../../layouts/Header";
-import { MiniCart } from "../../layouts/MiniCart";
+import { store } from "../../redux/store";
+import { Modal } from "../../layouts/Modal";
 import { Navigation } from "../../routes/Navigation";
 import "../../styles/styles.scss";
 
 const Main = () => {
-  const [displayCart, setDisplayCart] = useState('none');
   return (
     <>
-      <MiniCart displayCart={displayCart}/>
-      <Header setDisplayCart={setDisplayCart} displayCart={displayCart}/>
-      <BrowserRouter>
-        <Navigation />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Modal />
+          <Header />
+          <Navigation />
+        </BrowserRouter>
+      </Provider>
     </>
   );
 };
