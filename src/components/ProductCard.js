@@ -8,9 +8,7 @@ export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
   // se busca el producto en carrito de compras
-  const productCart = useSelector((state) =>
-    state.cart.products.find((productCart) => productCart.id === product.id)
-  );
+  const productCart = useSelector((state) => state.cart.products.find((productCart) => productCart.id === product.id) );
 
   //metodo para despachar agregar al carro +1
   const addCartHandler = () => {
