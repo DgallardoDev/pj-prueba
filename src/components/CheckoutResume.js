@@ -38,7 +38,7 @@ export const CheckoutResume = () => {
       <hr />
       <div className="cartResume__products">
         <span>{productQuant} productos</span>
-        <span>{formatPrice(total)}</span>
+        <h4>{formatPrice(total)}</h4>
       </div>
       <button className="cartResume__finishButton" onClick={handlerClick}>
         Finalizar Compra

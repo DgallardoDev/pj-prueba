@@ -57,13 +57,13 @@
 //imagen miniatura
 .miniCart__products__product img {
   border-radius: 15px 15px 0px 0px;
-  width: 20%;
+  width: 7vh;
 }
 //titulo  cantidad precio
 .miniCart__products__product__description {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 60%;
 }
 //boton borrar
 .miniCart__products__product__button {
