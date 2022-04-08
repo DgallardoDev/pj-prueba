@@ -8,15 +8,13 @@ import "../../styles/styles.scss";
 
 const Main = () => {
   return (
-   
-      <Provider store={store}>
-        <BrowserRouter>
-          <Modal />
-          <Header />
-          <Navigation />
-        </BrowserRouter>
-      </Provider>
-   
+    <Provider store={store}>
+      <BrowserRouter>
+        <Modal />
+        <Header />
+        <Navigation />
+      </BrowserRouter>
+    </Provider>
   );
 };
 export default Main;
