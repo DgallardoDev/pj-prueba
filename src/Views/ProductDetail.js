@@ -24,6 +24,7 @@ export const ProductDetail = () => {
   if (!product) {
     return <Navigate to="/" />;
   }
+
   //  +1 al carro
   const addCartHandler = () => {
     dispatch(addCart({ ...product }));
@@ -62,6 +63,7 @@ export const ProductDetail = () => {
           <button
             className="productDetail__cart__removeCart"
             onClick={decrementCartHandler}
+
           >
             <RiDeleteBin6Line /> Quitar del carrito
           </button>
