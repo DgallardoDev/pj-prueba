@@ -3,6 +3,7 @@ import { setCatalog } from "../actions/catalog";
 import { apiCall } from "../../utils/api";
 import { types } from "../types";
 import { randomPrice } from "../../utils/randomPrice";
+import { setMessage } from "../actions/message";
 
 function* getCatalog() {
   try {
@@ -12,7 +13,7 @@ function* getCatalog() {
     //se despachan los productos al estado
     yield put(setCatalog(catalog));
   } catch (error) {
-    alert(error.message);
+    yield put(setMessage({ show: true, text: error.message }))
   }
 }
 // watcher estan esperando que se ejecute el dispatch de alguna action

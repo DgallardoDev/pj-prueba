@@ -3,7 +3,6 @@ import { ItemTable } from "./ItemTable";
 
 export const TableDetail = () => {
   const products = useSelector((state) => state.cart.products);
-  console.log(products);
   return (
     <table className="cartDetail__table">
       <thead>

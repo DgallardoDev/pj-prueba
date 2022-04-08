@@ -7,8 +7,6 @@ export const types = {
   decrementCart:"[decrementCart]",
   removeCart:"[removeCart]",
   showMiniCart:"[showMiniCart]",
-  //loading 
-  setLoading:'[setLoading]',
   //message
   setMessage:'[setMessage]',
   //reset

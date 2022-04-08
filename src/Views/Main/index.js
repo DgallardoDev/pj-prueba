@@ -8,7 +8,7 @@ import "../../styles/styles.scss";
 
 const Main = () => {
   return (
-    <>
+   
       <Provider store={store}>
         <BrowserRouter>
           <Modal />
@@ -16,7 +16,7 @@ const Main = () => {
           <Navigation />
         </BrowserRouter>
       </Provider>
-    </>
+   
   );
 };
 export default Main;

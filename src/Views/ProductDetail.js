@@ -9,7 +9,7 @@ import { formatPrice } from "../utils/formatPrice";
 export const ProductDetail = () => {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
-  
+  //busca el id del producto en los params del url
   const idCharacter = searchParams.get("id");
   const product = useSelector((state) => state.catalog.find((product) => `${product.id}` === idCharacter));
 
@@ -17,6 +17,7 @@ export const ProductDetail = () => {
   useEffect(() => {
     dispatch(showMiniCart(false));
   }, [dispatch]);
+
   // si no es un producto valido vuelve al home
   if (!product) {
     return <Navigate to="/" />;
@@ -25,6 +26,7 @@ export const ProductDetail = () => {
   const addCartHandler = () => {
     dispatch(addCart({ ...product }));
   };
+  
   //  -1 al carro
   const decrementCartHandler = () => {
     dispatch(decrementCart({ ...product }));

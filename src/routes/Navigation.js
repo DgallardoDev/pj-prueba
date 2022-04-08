@@ -7,10 +7,13 @@ import { ProductDetail } from "../views/ProductDetail";
 import { ProductList } from "../views/ProductList";
 
 export const Navigation = () => {
+
   const dispatch = useDispatch();
+  // al iniciar el programa se obtienen todos los productos de la api para trabajar con el catalogo
   useEffect(() => {
     dispatch(getCatalog());
   }, [dispatch]);
+  
   return (
     <Routes>
       <Route path="/list" element={<ProductList />}></Route>
