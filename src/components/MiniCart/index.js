@@ -8,6 +8,7 @@ export const MiniCart = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   //metodo para hacer el dispatch al store y abrir o cerrar el carrito desplegable
   const handlerMiniCart = (display) => {
     dispatch(showMiniCart(display));
@@ -25,7 +26,7 @@ export const MiniCart = () => {
         </span>
       </div>
       <hr />
-      {productsCart.length ? (/* si existen productos muestra el detalle, si no muesta carrito vacio */
+      {productsCart.length ? (/* si existen productos en el carro muestra el detalle, si no muesta carrito vacio */
         <>
           <div className="miniCart__products">
             {productsCart.map((product) => (

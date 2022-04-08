@@ -1,8 +1,12 @@
 import { useSelector } from "react-redux";
 import { ItemTable } from "./ItemTable";
 
+// tabla que se muestra en checkout para ultima revision antes de pagar
 export const TableDetail = () => {
+  //se obtienen los productos actualmente en carro
+  
   const products = useSelector((state) => state.cart.products);
+
   return (
     <table className="cartDetail__table">
       <thead>

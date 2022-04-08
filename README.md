@@ -4,15 +4,15 @@ El sistema permite :
 
     1- Listar todos los personajes amiibos obtenidos de la api https://amiiboapi.com/
     2- Filtrar busqueda por tipo de producto
-    3- Seleccionar algun personaje de la lista de productos
-    4- Agregar y Quitar al carrito desde la vista de lista de productos (+1 y -1)
-    5- Mostrar detalle del producto en una vista de detalle
-    6- Agregar y quitar al carrito desde la vista detalle
-    7- Mostar y ocular carrito
-    8- Ir a checkout 
-    9- Muestra detalle de la compra donde permite modificar cantidades
-    10- finalizar la compra resetea los valores y vuelve al product list
+    3- Agregar y Quitar al carrito desde la vista de lista de productos (+1 y -1)
+    4- Mostrar detalle del producto en una vista de detalle
+    5- Agregar y quitar al carrito desde la vista detalle
+    6- Mostar y ocular carrito
+    7- Ir a checkout 
+    8- Muestra detalle de la compra donde permite modificar cantidades
+    9- finalizar la compra resetea los valores y vuelve al product list
 
+## Nota : Para volver al home se necesita presionar el logo de la parte superior izquierda.
 
 ## Ejecución
 

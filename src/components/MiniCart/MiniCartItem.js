@@ -3,10 +3,13 @@ import { useDispatch } from "react-redux";
 import { removeCart } from "../../redux/actions/cart";
 import { formatPrice } from "../../utils/formatPrice";
 export const MiniCartItem = ({ product }) => {
+
   const dispatch = useDispatch();
+  // funcion para resolver click en boton de eliminar
   const removeCartHandler = () => {
     dispatch(removeCart({ ...product }));
   };
+
   return (
     <div className="miniCart__products__product">
       <img src={product.image} alt="" />

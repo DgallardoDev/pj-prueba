@@ -1,6 +1,7 @@
 import { RadioItem } from "./RadioItem";
 
 export const RadioFilter = ({ handlerChangeRadio }) => {
+  
   return (
     <div className="productList__types">
       <h2>Mostrar</h2>
@@ -17,13 +18,13 @@ export const RadioFilter = ({ handlerChangeRadio }) => {
           value={`Figure`}
           name={"Figura"}
         />
-         <br />
+        <br />
         <RadioItem
           handlerChangeRadio={handlerChangeRadio}
           value={`Card`}
           name={"Carta"}
         />
-         <br />
+        <br />
         <RadioItem
           handlerChangeRadio={handlerChangeRadio}
           value={`Yarn`}

@@ -7,24 +7,30 @@ export const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  // se obtienen los productos actualmente en carro
   const productCart = useSelector((state) =>
     state.cart.products.find((productCart) => productCart.id === product.id)
   );
 
+  //metodo para despachar agregar al carro +1 
   const addCartHandler = () => {
     dispatch(addCart({ ...product }));
   };
 
+  //metodo para despachar agregar al carro -1 
   const decrementCartHandler = () => {
     dispatch(decrementCart({ ...product }));
   };
 
+  //metodo para navegar a la vista de detalle enviando el id de producto
+  const handlerClickProduct = () => {
+    navigate(`/detail/?id=${product.id}`);
+  }
+  
   return (
     <div className="productCard">
       <img
-        onClick={() => {
-          navigate(`/detail/?id=${product.id}`);
-        }}
+        onClick={handlerClickProduct}
         className="productCard__img"
         src={product.image}
         alt=""

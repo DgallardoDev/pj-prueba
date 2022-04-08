@@ -5,14 +5,18 @@ import { formatPrice } from "../../utils/formatPrice";
 export const ItemTable = ({ product }) => {
   
   const dispatch = useDispatch();
+
+  //metodo para despachar agregar al carro +1 
   const addCartHandler = () => {
     dispatch(addCart({ ...product }));
   };
 
+    //metodo para despachar agregar al carro -1 
   const decrementCartHandler = () => {
     dispatch(decrementCart({ ...product }));
   };
-
+  
+  // metodo para despachar remover item completo 
   const removeCartHandler = () => {
     dispatch(removeCart({ ...product }));
   };

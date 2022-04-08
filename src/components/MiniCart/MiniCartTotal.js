@@ -1,6 +1,7 @@
 import { formatPrice } from "../../utils/formatPrice";
 
 export const MiniCartTotal = ({total}) => {
+  
   return (
     <div className="miniCart__total">
       <h2>Total</h2>
